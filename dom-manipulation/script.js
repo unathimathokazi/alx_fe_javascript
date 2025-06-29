@@ -153,7 +153,8 @@ let quotes = JSON.parse(localStorage.getItem('quotes')) || [
     quotes = serverQuotes;
     saveQuotes();
     populateCategories();
-    alert('Synced with server. Server data replaced local data.');
+    alert('Quotes synced with server!');
+
   }
 
   async function postQuoteToServer(quote) {
